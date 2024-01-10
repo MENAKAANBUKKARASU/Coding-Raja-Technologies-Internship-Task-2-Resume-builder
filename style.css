@@ -1,0 +1,161 @@
+
+#cv-form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#cv-template{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+#namet2{
+    font-size: 50px;
+    margin-top: -50px;
+}
+.col-md-3{
+    margin-left: 20px;
+}
+.col-md-6,
+.col-md-7 {
+    float: none; 
+    margin-left:0px; 
+    
+}
+.col-md-7 {
+    float: none; 
+    margin: right 10px; 
+    margin-left: 60px;
+}
+
+#cv-form {
+    background-color: #f4f4f4; 
+    margin-top: 50px;
+}
+#cv-template #Print{
+    visibility: none;
+}
+#cv-template {
+    display: none;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #555;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.myimg {
+    border-radius: 50%;
+    width: 200px;
+}
+
+/* Button styles */
+.btn-primary,
+.btn-background {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #217dbb;
+}
+
+.btn-background {
+    background-color: #27ae60; 
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-background:hover {
+    background-color: #218c54;
+}
+
+
+.container {
+    margin-top: 35px;
+}
+
+#cv-form h3 {
+    color: #555; 
+    margin-top: 20px;
+}
+
+.btn-print {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #34495e; 
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-print:hover {
+    background-color: #2c3e50; 
+}@media print {
+    body * {
+        visibility: hidden;
+    }
+    #cv-template, #cv-template * {
+        visibility: visible;
+    }
+    #cv-template {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #cv-template {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+        background-color: #fff; 
+    }
+
+    .background, .background1 {
+        color: #000; 
+    }   
+}
+#photoInput {
+    display: none;
+}
+
+#cv-template #profilePreview {
+    border-radius: 25%;
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#profilePreview:hover {
+    opacity: 0.8;
+}
